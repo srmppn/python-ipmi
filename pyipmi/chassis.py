@@ -66,10 +66,10 @@ class Chassis(object):
         check_completion_code(rsp.completion_code)
         return ChassisBootOptions(rsp)
 
-    def chassis_control_power_down_krub(self):
+    def chassis_control_power_down(self):
         self.chassis_control(CONTROL_POWER_DOWN)
 
-    def chassis_control_power_up_krub(self):
+    def chassis_control_power_up(self):
         self.chassis_control(CONTROL_POWER_UP)
 
     def chassis_control_power_cycle(self):
